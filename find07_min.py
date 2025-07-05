@@ -5,5 +5,12 @@ def find_min(data):
         data: list of numbers
     returns: minimum number in the list
     """
+    s = 0
+    for i in data:
+        if s == 0:
+            s = i
+        elif i<s:
+            s = i
 
-    return 0
+    return s
+print(find_min([12, 34, 556, 7, 634, 2]))
